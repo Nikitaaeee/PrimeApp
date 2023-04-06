@@ -47,11 +47,11 @@ class CounterViewModel: ObservableObject, WolframNetworkManagerProtocol {
     }
     
     func isNumberPrime() -> String {
-        pluralizer.ordinal(self.state.counter)
+        return pluralizer.ordinalSuffix(for: self.state.counter)
     }
     
     func findClosestPrimeNumber(to n: Int) {
-        var cancellable = self.findClosestPrime(to: n)
+        let cancellable = self.findClosestPrime(to: n)
             .sink { completion in
                 
             } receiveValue: { [weak self] model in

@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  PrimeNumberApp
+
+  Created by Nikita Kirshin on 06.04.2023.
+  
+*/
+
+//MARK: - MenuView
+"menuView.primeNumbers" = "Prime numbers";
+"menuView.counter" = "Counter";
+"menuView.favoritePrimes" = "Favorite primes";
+
+//MARK: - CounterView
+
+"counterView.isAPrimeNumber" = "Is this a prime Number?";
+"counterView.whatIsNthPrimeNumber" = "What's is the %lld%@ prime number?";
+"counterView.nthPrimeNumberResponse" = "%lld is %lld%@ prime number";
+
+//MARK: - FavoritePrimesView
+
+"favoritePrimesView.favoritePrimes" = "Favorite Primes";
+
+//MARK: - IsPrimeModalView
+
+"isPrimeModalView.removeFromFav" = "Add to favorites";
+"isPrimeModalView.addToFav" = "Delete from favorites";
+"isPrimeModalView.notPrime" = "%lld is not prime 🙅🏼‍♀️";
+"isPrimeModalView.isPrime" = "%lld is prime 👍🏻";
