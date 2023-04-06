@@ -10,6 +10,8 @@
 		4834302429DDC15D0021CE72 /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834302329DDC15D0021CE72 /* UserDefaultsStore.swift */; };
 		4834302729DDC1BE0021CE72 /* FavoritePrimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834302629DDC1BE0021CE72 /* FavoritePrimesViewModel.swift */; };
 		4834302929DDC92E0021CE72 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834302829DDC92E0021CE72 /* CircleButton.swift */; };
+		4834303329DEC2480021CE72 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4834303529DEC2480021CE72 /* Localizable.strings */; };
+		4834303B29DECC580021CE72 /* IsPrimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834303A29DECC580021CE72 /* IsPrimeViewModel.swift */; };
 		4840ADA729D44F8800C8D620 /* PrimeNumberAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADA629D44F8800C8D620 /* PrimeNumberAppApp.swift */; };
 		4840ADA929D44F8800C8D620 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADA829D44F8800C8D620 /* MenuView.swift */; };
 		4840ADAB29D44F8900C8D620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4840ADAA29D44F8900C8D620 /* Assets.xcassets */; };
@@ -57,6 +59,9 @@
 		4834302329DDC15D0021CE72 /* UserDefaultsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStore.swift; sourceTree = "<group>"; };
 		4834302629DDC1BE0021CE72 /* FavoritePrimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesViewModel.swift; sourceTree = "<group>"; };
 		4834302829DDC92E0021CE72 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		4834303429DEC2480021CE72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4834303729DEC2750021CE72 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4834303A29DECC580021CE72 /* IsPrimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeViewModel.swift; sourceTree = "<group>"; };
 		4840ADA329D44F8800C8D620 /* PrimeNumberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeNumberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4840ADA629D44F8800C8D620 /* PrimeNumberAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumberAppApp.swift; sourceTree = "<group>"; };
 		4840ADA829D44F8800C8D620 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -145,9 +150,18 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		4834303C29DECFF60021CE72 /* Loczlization */ = {
+			isa = PBXGroup;
+			children = (
+				4834303529DEC2480021CE72 /* Localizable.strings */,
+			);
+			path = Loczlization;
+			sourceTree = "<group>";
+		};
 		4840AD9A29D44F8800C8D620 = {
 			isa = PBXGroup;
 			children = (
+				4834303C29DECFF60021CE72 /* Loczlization */,
 				4840ADA529D44F8800C8D620 /* PrimeNumberApp */,
 				4840ADB629D44F8A00C8D620 /* PrimeNumberAppTests */,
 				4840ADC029D44F8A00C8D620 /* PrimeNumberAppUITests */,
@@ -271,6 +285,7 @@
 				48DC1AB129DC4CCA0011A0A0 /* MenuViewModel.swift */,
 				48DC1AAF29DC491D0011A0A0 /* CounterViewModel.swift */,
 				4834302629DDC1BE0021CE72 /* FavoritePrimesViewModel.swift */,
+				4834303A29DECC580021CE72 /* IsPrimeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -369,6 +384,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 4840AD9A29D44F8800C8D620;
 			productRefGroup = 4840ADA429D44F8800C8D620 /* Products */;
@@ -388,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4840ADAE29D44F8900C8D620 /* Preview Assets.xcassets in Resources */,
+				4834303329DEC2480021CE72 /* Localizable.strings in Resources */,
 				4840ADAB29D44F8900C8D620 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +450,7 @@
 				4834302929DDC92E0021CE72 /* CircleButton.swift in Sources */,
 				4840ADD229D4519800C8D620 /* CounterView.swift in Sources */,
 				48DC1AB029DC491D0011A0A0 /* CounterViewModel.swift in Sources */,
+				4834303B29DECC580021CE72 /* IsPrimeViewModel.swift in Sources */,
 				4840ADDA29D462C700C8D620 /* UserDefaultsProvider.swift in Sources */,
 				4840ADDC29D4761A00C8D620 /* IsPrimeModalView.swift in Sources */,
 			);
@@ -469,6 +487,18 @@
 			targetProxy = 4840ADBE29D44F8A00C8D620 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4834303529DEC2480021CE72 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4834303429DEC2480021CE72 /* en */,
+				4834303729DEC2750021CE72 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4840ADC529D44F8A00C8D620 /* Debug */ = {

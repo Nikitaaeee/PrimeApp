@@ -40,9 +40,9 @@ struct CounterView: View {
             }
             .padding(Constants.smallPadding)
             
-            Button(Constants.findPrimeFirstHalfTitle +
-                   viewModel.isNumberPrime() +
-                   Constants.findPrimeSecondHalfTitle) {
+            Button(LocalizedStringKey(String(format: NSLocalizedString(Constants.findPrimeLocalizableKey, comment: ""),
+                                             viewModel.state.counter,
+                                             viewModel.isNumberPrime()))) {
                 viewModel.findClosestPrimeNumber(to: viewModel.state.counter)
             }
         }
@@ -51,11 +51,15 @@ struct CounterView: View {
         .sheet(isPresented: self.$viewModel.isPrimeModalShown, onDismiss: {
             viewModel.isPrimeModalShown = false
         }) {
-            IsPrimeModalView(state: viewModel.state)
+            IsPrimeModalView(viewModel: IsPrimeModalViewModel(state: viewModel.state))
         }
         .alert(isPresented: $viewModel.showPrimeNumberAlert) {
-            Alert(title: Text("The closest prime number is \(viewModel.primeNumber ?? 0)"),
-                  dismissButton: .default(Text("OK")) {
+            Alert(title:
+                    Text(LocalizedStringKey(String(format: NSLocalizedString(Constants.alertNthPrimeNumber, comment: ""),
+                                                   viewModel.primeNumber ?? .zero,
+                                                   viewModel.state.counter,
+                                                   viewModel.isNumberPrime()))),
+                  dismissButton: .default(Text(Constants.okButtonLabel)) {
                 viewModel.showPrimeNumberAlert = false
             })
         }
@@ -70,10 +74,11 @@ private extension CounterView {
         static let defaultPadding: CGFloat = 44
         static let minusTitle: String = "-"
         static let plusTitle: String = "+"
-        static let primeQuestionTitle: String = "Is this a prime Number?"
-        static let findPrimeFirstHalfTitle: String = "What's is the "
-        static let findPrimeSecondHalfTitle: String =  " prime number?"
-        static let navTitle: String = "Counter Demo"
+        static let okButtonLabel: String = "OK"
+        static let findPrimeLocalizableKey: String = "counterView.whatIsNthPrimeNumber"
+        static let alertNthPrimeNumber: String = "counterView.nthPrimeNumberResponse"
+        static let primeQuestionTitle: LocalizedStringKey = "counterView.isAPrimeNumber"
+        static let navTitle: LocalizedStringKey = "menuView.counter"
     }
 }
 

@@ -9,27 +9,40 @@ import Combine
 import SwiftUI
 
 struct IsPrimeModalView: View {
-    private let isPrimeNumberChecker = IsPrimeNumberChecker.self
-    @ObservedObject var state: AppState
+    @ObservedObject var viewModel: IsPrimeModalViewModel
     
     var body: some View {
         VStack {
-            if isPrimeNumberChecker.isPrime(state.counter) {
-                Text("\(state.counter) is prime 👍🏻")
-                    .font(.title2)
-                    .padding(20)
-                if state.favoritePrimes.contains(where: { $0.value == state.counter }) {
-                    Button("Remove from Favorite Primes") {
-                        state.favoritePrimes.removeAll(where: { $0.value == state.counter })
+            if viewModel.isCurrentNumberPrime {
+                Text(LocalizedStringKey(String(format: NSLocalizedString(Constants.isPrimeKey, comment: ""),
+                                               viewModel.state.counter)))
+                .font(.title2)
+                .padding(20)
+                
+                if viewModel.state.favoritePrimes.contains(where: { $0.value == viewModel.state.counter }) {
+                    Button(Constants.removeLabel) {
+                        viewModel.removeFromFavoritePrimes()
                     }
                 } else {
-                    Button("Add to Favorite Primes") {
-                        state.favoritePrimes.append(FavoritePrimes(value: state.counter))
+                    Button(Constants.addLabel) {
+                        viewModel.addToFavoritePrimes()
                     }
                 }
             } else {
-                Text("\(state.counter) is not prime 🙅🏼‍♀️")
+                Text(LocalizedStringKey(String(format: NSLocalizedString(Constants.notPrimeKey, comment: ""),
+                                               viewModel.state.counter)))
+                .font(.title2)
+                .padding(20)
             }
         }
+    }
+}
+
+private extension IsPrimeModalView {
+    enum Constants {
+        static let removeLabel: LocalizedStringKey = "Remove from Favorite Primes"
+        static let addLabel: LocalizedStringKey = "Add to Favorite Primes"
+        static let isPrimeKey: String = "isPrimeModalView.isPrime"
+        static let notPrimeKey: String = "isPrimeModalView.notPrime"
     }
 }

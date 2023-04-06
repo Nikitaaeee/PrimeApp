@@ -10,7 +10,11 @@ import SwiftUI
 
 final class FavoritePrimesViewModel: ObservableObject {
     
+    //MARK: - Properties
+    
     @Published var state: AppState
+    
+    //MARK: - Lifecycle
     
     init(state: AppState) {
         self.state = state

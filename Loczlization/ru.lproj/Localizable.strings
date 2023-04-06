@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  PrimeNumberApp
+
+  Created by Nikita Kirshin on 06.04.2023.
+  
+*/
+
+//MARK: - MenuView
+"menuView.primeNumbers" = "Простые числа";
+"menuView.counter" = "Счетчик";
+"menuView.favoritePrimes" = "Избранное";
+
+//MARK: - CounterView
+
+"counterView.isAPrimeNumber" = "Это простое число?";
+"counterView.whatIsNthPrimeNumber" = "Какое %lld-е простое число?";
+"counterView.nthPrimeNumberResponse" = "%lld - %lldе простое число";
+
+//MARK: - FavoritePrimesView
+
+"favoritePrimesView.favoritePrimes" = "Избранное";
+
+//MARK: - IsPrimeModalView
+
+"isPrimeModalView.removeFromFav" = "Удалить из избранного";
+"isPrimeModalView.addToFav" = "Добавить в избранное";
+"isPrimeModalView.notPrime" = "%lld не является простым числом 🙅🏼‍♀️";
+"isPrimeModalView.isPrime" = "%lld - Простое число 👍🏻";

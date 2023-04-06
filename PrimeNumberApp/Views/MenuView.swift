@@ -33,9 +33,9 @@ struct MenuView: View {
 
 private extension MenuView {
     enum Constants {
-        static let counterTitle: String = "Counter demo"
-        static let faviriteTitle: String = "Favorite primes"
-        static let selfNavTitle: String = "State management"
+        static let counterTitle: LocalizedStringKey = "menuView.counter"
+        static let faviriteTitle: LocalizedStringKey = "menuView.favoritePrimes"
+        static let selfNavTitle: LocalizedStringKey = "menuView.primeNumbers"
     }
 }
 

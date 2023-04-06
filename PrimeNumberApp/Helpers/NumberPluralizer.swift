@@ -8,10 +8,18 @@
 import Foundation
 
 struct NumberPluralizer {
-    static func ordinal(_ n: Int) -> String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .ordinal
+    static func ordinalSuffix(for number: Int) -> String {
+        let mod10 = number % 10
+        let mod100 = number % 100
         
-        return formatter.string(for: n) ?? .emptyString
+        if mod10 == 1 && mod100 != 11 {
+            return "st"
+        } else if mod10 == 2 && mod100 != 12 {
+            return "nd"
+        } else if mod10 == 3 && mod100 != 13 {
+            return "rd"
+        } else {
+            return "th"
+        }
     }
 }

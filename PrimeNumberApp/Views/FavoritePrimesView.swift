@@ -30,7 +30,7 @@ struct FavoritePrimesView: View {
 
 private extension FavoritePrimesView {
     enum Constants {
-        static let viewTitle: String = "Favorite Primes"
+        static let viewTitle: LocalizedStringKey = "favoritePrimesView.favoritePrimes"
     }
 }
 
