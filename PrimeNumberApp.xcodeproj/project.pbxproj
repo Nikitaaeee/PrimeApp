@@ -12,6 +12,8 @@
 		4834302929DDC92E0021CE72 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834302829DDC92E0021CE72 /* CircleButton.swift */; };
 		4834303329DEC2480021CE72 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4834303529DEC2480021CE72 /* Localizable.strings */; };
 		4834303B29DECC580021CE72 /* IsPrimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834303A29DECC580021CE72 /* IsPrimeViewModel.swift */; };
+		4834304229DEF9DC0021CE72 /* NumberPluralizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834304129DEF9DC0021CE72 /* NumberPluralizerTests.swift */; };
+		4834304429DEFB710021CE72 /* IsPrimeNumberCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834304329DEFB710021CE72 /* IsPrimeNumberCheckerTests.swift */; };
 		4840ADA729D44F8800C8D620 /* PrimeNumberAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADA629D44F8800C8D620 /* PrimeNumberAppApp.swift */; };
 		4840ADA929D44F8800C8D620 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADA829D44F8800C8D620 /* MenuView.swift */; };
 		4840ADAB29D44F8900C8D620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4840ADAA29D44F8900C8D620 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		4834303429DEC2480021CE72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4834303729DEC2750021CE72 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4834303A29DECC580021CE72 /* IsPrimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeViewModel.swift; sourceTree = "<group>"; };
+		4834304129DEF9DC0021CE72 /* NumberPluralizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPluralizerTests.swift; sourceTree = "<group>"; };
+		4834304329DEFB710021CE72 /* IsPrimeNumberCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeNumberCheckerTests.swift; sourceTree = "<group>"; };
 		4840ADA329D44F8800C8D620 /* PrimeNumberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeNumberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4840ADA629D44F8800C8D620 /* PrimeNumberAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumberAppApp.swift; sourceTree = "<group>"; };
 		4840ADA829D44F8800C8D620 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -158,6 +162,47 @@
 			path = Loczlization;
 			sourceTree = "<group>";
 		};
+		4834303D29DEF74B0021CE72 /* Soruce */ = {
+			isa = PBXGroup;
+			children = (
+				4840ADD629D45CEF00C8D620 /* AppState */,
+				48DC1AB529DC67150011A0A0 /* Models */,
+				4834302B29DDCDA80021CE72 /* Services */,
+				4840ADD029D4518E00C8D620 /* Views */,
+				48DC1AAE29DC490F0011A0A0 /* ViewModels */,
+				4840ADDF29D5BB2900C8D620 /* Extensions */,
+				4840ADD329D45A2700C8D620 /* Helpers */,
+			);
+			path = Soruce;
+			sourceTree = "<group>";
+		};
+		4834303E29DEF8D20021CE72 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4840ADA629D44F8800C8D620 /* PrimeNumberAppApp.swift */,
+				4840ADAA29D44F8900C8D620 /* Assets.xcassets */,
+				4840ADAC29D44F8900C8D620 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4834303F29DEF97A0021CE72 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4834304029DEF99A0021CE72 /* Helpers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4834304029DEF99A0021CE72 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4834304129DEF9DC0021CE72 /* NumberPluralizerTests.swift */,
+				4834304329DEFB710021CE72 /* IsPrimeNumberCheckerTests.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		4840AD9A29D44F8800C8D620 = {
 			isa = PBXGroup;
 			children = (
@@ -182,16 +227,8 @@
 		4840ADA529D44F8800C8D620 /* PrimeNumberApp */ = {
 			isa = PBXGroup;
 			children = (
-				4840ADA629D44F8800C8D620 /* PrimeNumberAppApp.swift */,
-				4840ADD629D45CEF00C8D620 /* AppState */,
-				4834302B29DDCDA80021CE72 /* Services */,
-				4840ADDF29D5BB2900C8D620 /* Extensions */,
-				48DC1AB529DC67150011A0A0 /* Models */,
-				48DC1AAE29DC490F0011A0A0 /* ViewModels */,
-				4840ADD029D4518E00C8D620 /* Views */,
-				4840ADD329D45A2700C8D620 /* Helpers */,
-				4840ADAA29D44F8900C8D620 /* Assets.xcassets */,
-				4840ADAC29D44F8900C8D620 /* Preview Content */,
+				4834303E29DEF8D20021CE72 /* Resources */,
+				4834303D29DEF74B0021CE72 /* Soruce */,
 			);
 			path = PrimeNumberApp;
 			sourceTree = "<group>";
@@ -207,6 +244,7 @@
 		4840ADB629D44F8A00C8D620 /* PrimeNumberAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				4834303F29DEF97A0021CE72 /* Source */,
 				4840ADB729D44F8A00C8D620 /* PrimeNumberAppTests.swift */,
 			);
 			path = PrimeNumberAppTests;
@@ -460,6 +498,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4834304429DEFB710021CE72 /* IsPrimeNumberCheckerTests.swift in Sources */,
+				4834304229DEF9DC0021CE72 /* NumberPluralizerTests.swift in Sources */,
 				4840ADB829D44F8A00C8D620 /* PrimeNumberAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,7 +662,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PrimeNumberApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PrimeNumberApp/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -650,7 +690,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PrimeNumberApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PrimeNumberApp/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
