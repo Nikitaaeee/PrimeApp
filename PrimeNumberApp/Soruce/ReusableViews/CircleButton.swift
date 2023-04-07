@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct CircleButton: View {
+    
+    //MARK: - Properties
+    
     let symbol: String
     let action: () -> Void
+    
+    //MARK: - Body
     
     var body: some View {
         Button(action: action) {

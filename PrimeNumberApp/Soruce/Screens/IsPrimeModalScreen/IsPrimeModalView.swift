@@ -9,7 +9,12 @@ import Combine
 import SwiftUI
 
 struct IsPrimeModalView: View {
+    
+    //MARK: - Properties
+    
     @ObservedObject var viewModel: IsPrimeModalViewModel
+    
+    //MARK: - Body
     
     var body: some View {
         VStack {
@@ -40,8 +45,8 @@ struct IsPrimeModalView: View {
 
 private extension IsPrimeModalView {
     enum Constants {
-        static let removeLabel: LocalizedStringKey = "Remove from Favorite Primes"
-        static let addLabel: LocalizedStringKey = "Add to Favorite Primes"
+        static let removeLabel: LocalizedStringKey = "isPrimeModalView.removeFromFav"
+        static let addLabel: LocalizedStringKey = "isPrimeModalView.addToFav"
         static let isPrimeKey: String = "isPrimeModalView.isPrime"
         static let notPrimeKey: String = "isPrimeModalView.notPrime"
     }

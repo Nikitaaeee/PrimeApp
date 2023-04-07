@@ -9,6 +9,8 @@ import Foundation
 
 enum WolframEndpoint {
     case isPrimeCheck(query: String)
+    case getPrimeNumbers
+    case getInfo
     
     var wolframAlphaApiKey: String {
         return "AYAAX2-R3X5UEL263" // TODO: Replace with your Wolfram Alpha API key
@@ -20,14 +22,32 @@ extension WolframEndpoint: RequestBuilder {
         var components = URLComponents()
         components.scheme = "https"
         components.host = "api.wolframalpha.com"
-        components.path = "/v2/query"
         
         switch self {
         case .isPrimeCheck(let query):
+            components.path = "/v2/query"
             let queryItems = [
                 URLQueryItem(name: "input", value: query),
                 URLQueryItem(name: "format", value: "plaintext"),
                 URLQueryItem(name: "output", value: "JSON"),
+                URLQueryItem(name: "appid", value: wolframAlphaApiKey)
+            ]
+            components.queryItems = queryItems
+            
+        case .getPrimeNumbers:
+            components.path = "/v1/result"
+            let query = "list+of+first+twenty+prime+numbers"
+            let queryItems = [
+                URLQueryItem(name: "i", value: query),
+                URLQueryItem(name: "appid", value: wolframAlphaApiKey)
+            ]
+            components.queryItems = queryItems
+            
+        case .getInfo:
+            components.path = "/v1/result"
+            let query = "what+is+prime+number"
+            let queryItems = [
+                URLQueryItem(name: "i", value: query),
                 URLQueryItem(name: "appid", value: wolframAlphaApiKey)
             ]
             components.queryItems = queryItems

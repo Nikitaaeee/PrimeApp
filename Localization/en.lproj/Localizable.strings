@@ -23,7 +23,12 @@
 
 //MARK: - IsPrimeModalView
 
-"isPrimeModalView.removeFromFav" = "Add to favorites";
-"isPrimeModalView.addToFav" = "Delete from favorites";
+"isPrimeModalView.removeFromFav" = "Delete from favorites";
+"isPrimeModalView.addToFav" = "Add to favorites";
 "isPrimeModalView.notPrime" = "%lld is not prime 🙅🏼‍♀️";
 "isPrimeModalView.isPrime" = "%lld is prime 👍🏻";
+
+//MARK: - PrimeInfoDetailView
+
+"primeInfoDetailView.titleLabel" = "What Is Prime Number?";
+"primeInfoDetailView.primesExampleTitle" = "There are first 20 prime numbers:";

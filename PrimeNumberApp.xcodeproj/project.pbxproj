@@ -14,6 +14,10 @@
 		4834303B29DECC580021CE72 /* IsPrimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834303A29DECC580021CE72 /* IsPrimeViewModel.swift */; };
 		4834304229DEF9DC0021CE72 /* NumberPluralizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834304129DEF9DC0021CE72 /* NumberPluralizerTests.swift */; };
 		4834304429DEFB710021CE72 /* IsPrimeNumberCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834304329DEFB710021CE72 /* IsPrimeNumberCheckerTests.swift */; };
+		4834304629DEFFAC0021CE72 /* CounterControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834304529DEFFAC0021CE72 /* CounterControlView.swift */; };
+		4834304829DF055E0021CE72 /* PrimeNumbersInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834304729DF055E0021CE72 /* PrimeNumbersInfoView.swift */; };
+		4834304A29DF0B650021CE72 /* PrimeInfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834304929DF0B650021CE72 /* PrimeInfoDetailView.swift */; };
+		4834304E29DF15050021CE72 /* PrimeInfoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834304D29DF15050021CE72 /* PrimeInfoDetailViewModel.swift */; };
 		4840ADA729D44F8800C8D620 /* PrimeNumberAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADA629D44F8800C8D620 /* PrimeNumberAppApp.swift */; };
 		4840ADA929D44F8800C8D620 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADA829D44F8800C8D620 /* MenuView.swift */; };
 		4840ADAB29D44F8900C8D620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4840ADAA29D44F8900C8D620 /* Assets.xcassets */; };
@@ -33,7 +37,8 @@
 		4840ADE929D5C3D400C8D620 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADE829D5C3D400C8D620 /* APIError.swift */; };
 		4840ADEB29D5C3F000C8D620 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADEA29D5C3F000C8D620 /* RequestBuilder.swift */; };
 		4840ADEE29D5C42200C8D620 /* WolframEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADED29D5C42200C8D620 /* WolframEndpoint.swift */; };
-		48DC1AAD29DC44DA0011A0A0 /* WolframNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AAC29DC44DA0011A0A0 /* WolframNetworkManagerProtocol.swift */; };
+		4867444929E0011B009FA499 /* AnimatedPrimeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867444829E0011B009FA499 /* AnimatedPrimeCollection.swift */; };
+		48DC1AAD29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AAC29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift */; };
 		48DC1AB029DC491D0011A0A0 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AAF29DC491D0011A0A0 /* CounterViewModel.swift */; };
 		48DC1AB229DC4CCA0011A0A0 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AB129DC4CCA0011A0A0 /* MenuViewModel.swift */; };
 		48DC1AB429DC63910011A0A0 /* FavoritePrimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AB329DC63910011A0A0 /* FavoritePrimesView.swift */; };
@@ -66,6 +71,10 @@
 		4834303A29DECC580021CE72 /* IsPrimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeViewModel.swift; sourceTree = "<group>"; };
 		4834304129DEF9DC0021CE72 /* NumberPluralizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPluralizerTests.swift; sourceTree = "<group>"; };
 		4834304329DEFB710021CE72 /* IsPrimeNumberCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeNumberCheckerTests.swift; sourceTree = "<group>"; };
+		4834304529DEFFAC0021CE72 /* CounterControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterControlView.swift; sourceTree = "<group>"; };
+		4834304729DF055E0021CE72 /* PrimeNumbersInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersInfoView.swift; sourceTree = "<group>"; };
+		4834304929DF0B650021CE72 /* PrimeInfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeInfoDetailView.swift; sourceTree = "<group>"; };
+		4834304D29DF15050021CE72 /* PrimeInfoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeInfoDetailViewModel.swift; sourceTree = "<group>"; };
 		4840ADA329D44F8800C8D620 /* PrimeNumberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeNumberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4840ADA629D44F8800C8D620 /* PrimeNumberAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumberAppApp.swift; sourceTree = "<group>"; };
 		4840ADA829D44F8800C8D620 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -88,7 +97,8 @@
 		4840ADE829D5C3D400C8D620 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		4840ADEA29D5C3F000C8D620 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		4840ADED29D5C42200C8D620 /* WolframEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframEndpoint.swift; sourceTree = "<group>"; };
-		48DC1AAC29DC44DA0011A0A0 /* WolframNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframNetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		4867444829E0011B009FA499 /* AnimatedPrimeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPrimeCollection.swift; sourceTree = "<group>"; };
+		48DC1AAC29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPrimeNumberManagerProtocol.swift; sourceTree = "<group>"; };
 		48DC1AAF29DC491D0011A0A0 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		48DC1AB129DC4CCA0011A0A0 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		48DC1AB329DC63910011A0A0 /* FavoritePrimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesView.swift; sourceTree = "<group>"; };
@@ -129,14 +139,6 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
-		4834302A29DDCD850021CE72 /* ReusableViews */ = {
-			isa = PBXGroup;
-			children = (
-				4834302829DDC92E0021CE72 /* CircleButton.swift */,
-			);
-			path = ReusableViews;
-			sourceTree = "<group>";
-		};
 		4834302B29DDCDA80021CE72 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,23 +156,23 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
-		4834303C29DECFF60021CE72 /* Loczlization */ = {
+		4834303C29DECFF60021CE72 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
 				4834303529DEC2480021CE72 /* Localizable.strings */,
 			);
-			path = Loczlization;
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		4834303D29DEF74B0021CE72 /* Soruce */ = {
 			isa = PBXGroup;
 			children = (
 				4840ADD629D45CEF00C8D620 /* AppState */,
-				48DC1AB529DC67150011A0A0 /* Models */,
 				4834302B29DDCDA80021CE72 /* Services */,
-				4840ADD029D4518E00C8D620 /* Views */,
-				48DC1AAE29DC490F0011A0A0 /* ViewModels */,
+				4867445029E01240009FA499 /* Screens */,
+				48DC1AB529DC67150011A0A0 /* Models */,
 				4840ADDF29D5BB2900C8D620 /* Extensions */,
+				4867444F29E01224009FA499 /* ReusableViews */,
 				4840ADD329D45A2700C8D620 /* Helpers */,
 			);
 			path = Soruce;
@@ -206,7 +208,7 @@
 		4840AD9A29D44F8800C8D620 = {
 			isa = PBXGroup;
 			children = (
-				4834303C29DECFF60021CE72 /* Loczlization */,
+				4834303C29DECFF60021CE72 /* Localization */,
 				4840ADA529D44F8800C8D620 /* PrimeNumberApp */,
 				4840ADB629D44F8A00C8D620 /* PrimeNumberAppTests */,
 				4840ADC029D44F8A00C8D620 /* PrimeNumberAppUITests */,
@@ -259,18 +261,6 @@
 			path = PrimeNumberAppUITests;
 			sourceTree = "<group>";
 		};
-		4840ADD029D4518E00C8D620 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4834302A29DDCD850021CE72 /* ReusableViews */,
-				4840ADA829D44F8800C8D620 /* MenuView.swift */,
-				4840ADD129D4519800C8D620 /* CounterView.swift */,
-				48DC1AB329DC63910011A0A0 /* FavoritePrimesView.swift */,
-				4840ADDB29D4761A00C8D620 /* IsPrimeModalView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		4840ADD329D45A2700C8D620 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,7 +294,7 @@
 				4840ADE829D5C3D400C8D620 /* APIError.swift */,
 				4840ADEA29D5C3F000C8D620 /* RequestBuilder.swift */,
 				4840ADED29D5C42200C8D620 /* WolframEndpoint.swift */,
-				48DC1AAC29DC44DA0011A0A0 /* WolframNetworkManagerProtocol.swift */,
+				48DC1AAC29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -317,15 +307,88 @@
 			path = DTOModels;
 			sourceTree = "<group>";
 		};
-		48DC1AAE29DC490F0011A0A0 /* ViewModels */ = {
+		4867444A29E011D2009FA499 /* MenuScreen */ = {
 			isa = PBXGroup;
 			children = (
+				4840ADA829D44F8800C8D620 /* MenuView.swift */,
 				48DC1AB129DC4CCA0011A0A0 /* MenuViewModel.swift */,
+			);
+			path = MenuScreen;
+			sourceTree = "<group>";
+		};
+		4867444B29E011E0009FA499 /* CounterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4867445229E0127C009FA499 /* Views */,
 				48DC1AAF29DC491D0011A0A0 /* CounterViewModel.swift */,
+				4840ADD129D4519800C8D620 /* CounterView.swift */,
+			);
+			path = CounterScreen;
+			sourceTree = "<group>";
+		};
+		4867444C29E011ED009FA499 /* FavoritePrimesScreen */ = {
+			isa = PBXGroup;
+			children = (
 				4834302629DDC1BE0021CE72 /* FavoritePrimesViewModel.swift */,
+				48DC1AB329DC63910011A0A0 /* FavoritePrimesView.swift */,
+			);
+			path = FavoritePrimesScreen;
+			sourceTree = "<group>";
+		};
+		4867444D29E011FD009FA499 /* IsPrimeModalScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4840ADDB29D4761A00C8D620 /* IsPrimeModalView.swift */,
 				4834303A29DECC580021CE72 /* IsPrimeViewModel.swift */,
 			);
-			path = ViewModels;
+			path = IsPrimeModalScreen;
+			sourceTree = "<group>";
+		};
+		4867444E29E01211009FA499 /* PrimeDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4867445129E01268009FA499 /* Views */,
+				4834304929DF0B650021CE72 /* PrimeInfoDetailView.swift */,
+				4834304D29DF15050021CE72 /* PrimeInfoDetailViewModel.swift */,
+			);
+			path = PrimeDetailsScreen;
+			sourceTree = "<group>";
+		};
+		4867444F29E01224009FA499 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				4834304729DF055E0021CE72 /* PrimeNumbersInfoView.swift */,
+				4834302829DDC92E0021CE72 /* CircleButton.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		4867445029E01240009FA499 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4867444E29E01211009FA499 /* PrimeDetailsScreen */,
+				4867444D29E011FD009FA499 /* IsPrimeModalScreen */,
+				4867444C29E011ED009FA499 /* FavoritePrimesScreen */,
+				4867444B29E011E0009FA499 /* CounterScreen */,
+				4867444A29E011D2009FA499 /* MenuScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4867445129E01268009FA499 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4867444829E0011B009FA499 /* AnimatedPrimeCollection.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4867445229E0127C009FA499 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4834304529DEFFAC0021CE72 /* CounterControlView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		48DC1AB529DC67150011A0A0 /* Models */ = {
@@ -473,13 +536,17 @@
 				4840ADD829D45CFE00C8D620 /* AppState.swift in Sources */,
 				48DC1AB229DC4CCA0011A0A0 /* MenuViewModel.swift in Sources */,
 				4834302729DDC1BE0021CE72 /* FavoritePrimesViewModel.swift in Sources */,
-				48DC1AAD29DC44DA0011A0A0 /* WolframNetworkManagerProtocol.swift in Sources */,
+				48DC1AAD29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift in Sources */,
+				4834304E29DF15050021CE72 /* PrimeInfoDetailViewModel.swift in Sources */,
 				4840ADEB29D5C3F000C8D620 /* RequestBuilder.swift in Sources */,
+				4867444929E0011B009FA499 /* AnimatedPrimeCollection.swift in Sources */,
 				4834302429DDC15D0021CE72 /* UserDefaultsStore.swift in Sources */,
+				4834304629DEFFAC0021CE72 /* CounterControlView.swift in Sources */,
 				4840ADE529D5C18700C8D620 /* WolframAlphaResult.swift in Sources */,
 				4840ADA929D44F8800C8D620 /* MenuView.swift in Sources */,
 				4840ADE929D5C3D400C8D620 /* APIError.swift in Sources */,
 				4840ADEE29D5C42200C8D620 /* WolframEndpoint.swift in Sources */,
+				4834304829DF055E0021CE72 /* PrimeNumbersInfoView.swift in Sources */,
 				4840ADA729D44F8800C8D620 /* PrimeNumberAppApp.swift in Sources */,
 				48DC1AB729DC67210011A0A0 /* FavoritePrimes.swift in Sources */,
 				4840ADE129D5BB3A00C8D620 /* String+Extensions.swift in Sources */,
@@ -491,6 +558,7 @@
 				4834303B29DECC580021CE72 /* IsPrimeViewModel.swift in Sources */,
 				4840ADDA29D462C700C8D620 /* UserDefaultsProvider.swift in Sources */,
 				4840ADDC29D4761A00C8D620 /* IsPrimeModalView.swift in Sources */,
+				4834304A29DF0B650021CE72 /* PrimeInfoDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

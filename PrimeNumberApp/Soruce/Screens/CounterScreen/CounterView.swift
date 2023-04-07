@@ -17,23 +17,8 @@ struct CounterView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                
-                CircleButton(symbol: Constants.minusTitle) {
-                    viewModel.decrementCounter()
-                }
-                
-                Spacer().frame(width: Constants.defaultPadding)
-                
-                Text("\(viewModel.state.counter)")
-                    .font(.largeTitle)
-                
-                Spacer().frame(width: Constants.defaultPadding)
-
-                CircleButton(symbol: Constants.plusTitle) {
-                    viewModel.incrementCounter()
-                }
-            }
+            
+            CounterControlView(viewModel: viewModel)
             
             Button(Constants.primeQuestionTitle) {
                 viewModel.togglePrimeModal()
@@ -51,18 +36,30 @@ struct CounterView: View {
         .sheet(isPresented: self.$viewModel.isPrimeModalShown, onDismiss: {
             viewModel.isPrimeModalShown = false
         }) {
-            IsPrimeModalView(viewModel: IsPrimeModalViewModel(state: viewModel.state))
+            isPrimeModalView()
         }
         .alert(isPresented: $viewModel.showPrimeNumberAlert) {
-            Alert(title:
-                    Text(LocalizedStringKey(String(format: NSLocalizedString(Constants.alertNthPrimeNumber, comment: ""),
-                                                   viewModel.primeNumber ?? .zero,
-                                                   viewModel.state.counter,
-                                                   viewModel.isNumberPrime()))),
-                  dismissButton: .default(Text(Constants.okButtonLabel)) {
-                viewModel.showPrimeNumberAlert = false
-            })
+            primeNumberAlert()
         }
+    }
+}
+
+//MARK: - Private
+
+private extension CounterView {
+    func isPrimeModalView() -> IsPrimeModalView {
+        IsPrimeModalView(viewModel: IsPrimeModalViewModel(state: viewModel.state))
+    }
+    
+    func primeNumberAlert() -> Alert {
+        return Alert(title:
+                        Text(LocalizedStringKey(String(format: NSLocalizedString(Constants.alertNthPrimeNumber, comment: ""),
+                                                       viewModel.primeNumber ?? .zero,
+                                                       viewModel.state.counter,
+                                                       viewModel.isNumberPrime()))),
+                     dismissButton: .default(Text(Constants.okButtonLabel)) {
+            viewModel.showPrimeNumberAlert = false
+        })
     }
 }
 
@@ -71,9 +68,6 @@ struct CounterView: View {
 private extension CounterView {
     enum Constants {
         static let smallPadding: CGFloat = 24
-        static let defaultPadding: CGFloat = 44
-        static let minusTitle: String = "-"
-        static let plusTitle: String = "+"
         static let okButtonLabel: String = "OK"
         static let findPrimeLocalizableKey: String = "counterView.whatIsNthPrimeNumber"
         static let alertNthPrimeNumber: String = "counterView.nthPrimeNumberResponse"
