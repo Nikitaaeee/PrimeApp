@@ -21,5 +21,6 @@ extension PrimeNumbersInfoNetworkManagerProtocol {
     
     func getPrimeNubersInfo() -> AnyPublisher<String, APIError> {
         return networkService.requestString(with: WolframEndpoint.getInfo)
+            .eraseToAnyPublisher()
     }
 }
