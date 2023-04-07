@@ -38,6 +38,7 @@
 		4840ADEB29D5C3F000C8D620 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADEA29D5C3F000C8D620 /* RequestBuilder.swift */; };
 		4840ADEE29D5C42200C8D620 /* WolframEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADED29D5C42200C8D620 /* WolframEndpoint.swift */; };
 		4867444929E0011B009FA499 /* AnimatedPrimeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867444829E0011B009FA499 /* AnimatedPrimeCollection.swift */; };
+		4867445429E0137D009FA499 /* PrimeNumbersInfoNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867445329E0137D009FA499 /* PrimeNumbersInfoNetworkManagerProtocol.swift */; };
 		48DC1AAD29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AAC29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift */; };
 		48DC1AB029DC491D0011A0A0 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AAF29DC491D0011A0A0 /* CounterViewModel.swift */; };
 		48DC1AB229DC4CCA0011A0A0 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AB129DC4CCA0011A0A0 /* MenuViewModel.swift */; };
@@ -98,6 +99,7 @@
 		4840ADEA29D5C3F000C8D620 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		4840ADED29D5C42200C8D620 /* WolframEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframEndpoint.swift; sourceTree = "<group>"; };
 		4867444829E0011B009FA499 /* AnimatedPrimeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPrimeCollection.swift; sourceTree = "<group>"; };
+		4867445329E0137D009FA499 /* PrimeNumbersInfoNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersInfoNetworkManagerProtocol.swift; sourceTree = "<group>"; };
 		48DC1AAC29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPrimeNumberManagerProtocol.swift; sourceTree = "<group>"; };
 		48DC1AAF29DC491D0011A0A0 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		48DC1AB129DC4CCA0011A0A0 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 				4840ADEA29D5C3F000C8D620 /* RequestBuilder.swift */,
 				4840ADED29D5C42200C8D620 /* WolframEndpoint.swift */,
 				48DC1AAC29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift */,
+				4867445329E0137D009FA499 /* PrimeNumbersInfoNetworkManagerProtocol.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				4834304E29DF15050021CE72 /* PrimeInfoDetailViewModel.swift in Sources */,
 				4840ADEB29D5C3F000C8D620 /* RequestBuilder.swift in Sources */,
 				4867444929E0011B009FA499 /* AnimatedPrimeCollection.swift in Sources */,
+				4867445429E0137D009FA499 /* PrimeNumbersInfoNetworkManagerProtocol.swift in Sources */,
 				4834302429DDC15D0021CE72 /* UserDefaultsStore.swift in Sources */,
 				4834304629DEFFAC0021CE72 /* CounterControlView.swift in Sources */,
 				4840ADE529D5C18700C8D620 /* WolframAlphaResult.swift in Sources */,
