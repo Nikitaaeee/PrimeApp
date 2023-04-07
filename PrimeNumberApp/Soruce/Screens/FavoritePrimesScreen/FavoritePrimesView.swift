@@ -13,6 +13,8 @@ struct FavoritePrimesView: View {
     
     @ObservedObject var viewModel: FavoritePrimesViewModel
     
+    //MARK: - Body
+    
     var body: some View {
         List {
             ForEach(self.viewModel.state.favoritePrimes) { prime in
@@ -27,6 +29,8 @@ struct FavoritePrimesView: View {
         .navigationBarTitle(Text(Constants.viewTitle))
     }
 }
+
+//MARK: - Constants
 
 private extension FavoritePrimesView {
     enum Constants {

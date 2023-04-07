@@ -48,7 +48,11 @@ final class PrimeInfoDetailViewModel: ObservableObject, PrimeNumbersInfoNetworkM
             })
             .store(in: &cancellables)
     }
-    
+}
+
+//MARK: - Private
+
+private extension PrimeInfoDetailViewModel {
     func convertStringToIntArray(_ string: String) -> [Int] {
         let trimmedString = string.trimmingCharacters(in: CharacterSet(charactersIn: "{}"))
         let substrings = trimmedString.split(separator: ",")

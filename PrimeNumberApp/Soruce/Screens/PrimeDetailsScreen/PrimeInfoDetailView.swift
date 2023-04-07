@@ -37,6 +37,8 @@ struct PrimeInfoDetailView: View {
     }
 }
 
+//MARK: - Constants
+
 private extension PrimeInfoDetailView {
     enum Constants {
         static let labelText: LocalizedStringKey = "primeInfoDetailView.titleLabel"

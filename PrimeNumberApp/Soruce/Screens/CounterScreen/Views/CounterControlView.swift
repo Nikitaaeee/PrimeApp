@@ -36,6 +36,8 @@ struct CounterControlView: View {
     }
 }
 
+//MARK: - Constants
+
 private extension CounterControlView {
     enum Constants {
         static let defaultPadding: CGFloat = 44
