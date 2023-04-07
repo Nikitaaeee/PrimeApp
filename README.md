@@ -21,6 +21,12 @@ The app supports localization in:
 
 - SwiftUI, MVVM + Combine, URLSession, UserDefaults
 
+## Screenshots
+Example of Localization: 
+
+![Simulator Screenshot - iPhone 14 Pro - 2023-04-07 at 13 02 41 — средний размер](https://user-images.githubusercontent.com/75203988/230589810-2a347937-39a6-48cd-8d66-53861f8fbf5f.jpeg)
+![Simulator Screenshot - iPhone 14 Pro - 2023-04-07 at 13 00 57 — средний размер](https://user-images.githubusercontent.com/75203988/230589596-52e6c756-da4a-4a2f-90ad-9dc6c88c7ef9.jpeg)
+
 ## GIFs
 Counter, STATE binding, Checking if a number is prime or not, pluralization of suffix, add to Favorites features:
 
