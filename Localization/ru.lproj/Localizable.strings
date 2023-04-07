@@ -27,3 +27,8 @@
 "isPrimeModalView.addToFav" = "Добавить в избранное";
 "isPrimeModalView.notPrime" = "%lld не является простым числом 🙅🏼‍♀️";
 "isPrimeModalView.isPrime" = "%lld - Простое число 👍🏻";
+
+//MARK: - PrimeInfoDetailView
+
+"primeInfoDetailView.titleLabel" = "Что такое простое число?";
+"primeInfoDetailView.primesExampleTitle" = "Ниже представлены первые 20 простых чисел:";

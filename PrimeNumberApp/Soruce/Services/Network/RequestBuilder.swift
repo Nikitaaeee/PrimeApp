@@ -10,6 +10,3 @@ import Foundation
 protocol RequestBuilder {
     var urlRequest: URLRequest {get}
 }
-
-typealias Parameters = [String: Any]
- 

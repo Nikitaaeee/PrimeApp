@@ -8,25 +8,26 @@
 import Combine
 import SwiftUI
 
-class CounterViewModel: ObservableObject, WolframNetworkManagerProtocol {
+final class CounterViewModel: ObservableObject, FindPrimeNumberManagerProtocol {
     
     //MARK: - Properties
     
     @Published var state: AppState
     @Published var isPrimeModalShown: Bool = false
-//    @Published var primeNumber: Int?
+    @Published var showPrimeNumberAlert: Bool = false
     
-    //MARK: - Delete If Wrong
+    //TODO: - Refactor Bool binding logic into Int binding logic
     @Published var primeNumber: Int? = nil {
         didSet {
             showPrimeNumberAlert = primeNumber != nil
         }
     }
-    @Published var showPrimeNumberAlert: Bool = false
 
     private var cancellables = Set<AnyCancellable>()
     let networkService: NetworkServiceProtocol = NetworkService()
     let pluralizer = NumberPluralizer.self
+    
+    //MARK: - Lifecycle
     
     init(state: AppState) {
         self.state = state
