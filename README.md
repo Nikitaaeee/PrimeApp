@@ -13,6 +13,7 @@ The app supports localization in:
 - Increase and decrease the state binded counter.
 - Check if the selected number is a prime number.
 - Find the n'th prime number using WolframAlpha API with URLSession.
+- Read what is prime numbers and see first 20 of them using two requests to WolframAlpha API.
 - UserDefaults for storing current counter value, favorite prime numbers.
 - MVVM (Model-View-ViewModel) architecture for clean and maintainable code.
 
