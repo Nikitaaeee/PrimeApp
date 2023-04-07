@@ -76,6 +76,7 @@ private extension CounterView {
     }
 }
 
+//MARK: - Preview
 
 struct CounterView_Previews: PreviewProvider {
     static var previews: some View {

@@ -13,7 +13,7 @@ enum WolframEndpoint {
     case getInfo
     
     var wolframAlphaApiKey: String {
-        return "AYAAX2-R3X5UEL263" // TODO: Replace with your Wolfram Alpha API key
+        return "XXXXXX-XXXXXXXXXX" // TODO: Replace with your Wolfram Alpha API key
     }
 }
 

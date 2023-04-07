@@ -43,6 +43,8 @@ struct IsPrimeModalView: View {
     }
 }
 
+//MARK: - Constants
+
 private extension IsPrimeModalView {
     enum Constants {
         static let removeLabel: LocalizedStringKey = "isPrimeModalView.removeFromFav"

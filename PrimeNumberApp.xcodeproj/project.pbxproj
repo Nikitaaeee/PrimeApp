@@ -369,11 +369,11 @@
 		4867445029E01240009FA499 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				4867444E29E01211009FA499 /* PrimeDetailsScreen */,
+				4867444A29E011D2009FA499 /* MenuScreen */,
+				4867444B29E011E0009FA499 /* CounterScreen */,
 				4867444D29E011FD009FA499 /* IsPrimeModalScreen */,
 				4867444C29E011ED009FA499 /* FavoritePrimesScreen */,
-				4867444B29E011E0009FA499 /* CounterScreen */,
-				4867444A29E011D2009FA499 /* MenuScreen */,
+				4867444E29E01211009FA499 /* PrimeDetailsScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
