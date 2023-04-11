@@ -7,8 +7,13 @@
 
 import SwiftUI
 
-struct AnimatedPrimeCollection: View {
+struct PrimesCollection: View {
+    
+    //MARK: - Properties
+    
     let integers: [Int]
+        
+    //MARK: - Body
     
     var body: some View {
         ScrollView {
@@ -23,12 +28,12 @@ struct AnimatedPrimeCollection: View {
                     Text("\(integer)")
                         .font(.headline)
                         .padding(10)
-                        .frame(width: 60, height: 60) // <-- Set a fixed width and height
-                        .background(Color.blue.opacity(0.8)) // <-- Set alpha to 0.8
+                        .frame(width: 60, height: 60)
+                        .background(Color.blue.opacity(0.8))
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .transition(.scale)
-                        .opacity(0.8) // <-- Set the opacity to 0.8
+                        .opacity(0.8)
                 }
             }
         }

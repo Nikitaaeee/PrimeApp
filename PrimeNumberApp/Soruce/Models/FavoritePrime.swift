@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FavoritePrimes: Identifiable, Codable {
+struct FavoritePrime: Identifiable, Codable {
     let id = UUID()
     let value: Int
 }
