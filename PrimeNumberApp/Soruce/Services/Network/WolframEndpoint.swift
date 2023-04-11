@@ -8,20 +8,27 @@
 import Foundation
 
 enum WolframEndpoint {
+    static let wolframAlphaApiKey = "XXXXXX-XXXXXX" // TODO: Replace with your Wolfram Alpha API key
+    
     case isPrimeCheck(query: String)
     case getPrimeNumbers
     case getInfo
-    
-    var wolframAlphaApiKey: String {
-        return "XXXXXX-XXXXXXXXXX" // TODO: Replace with your Wolfram Alpha API key
-    }
 }
 
 extension WolframEndpoint: RequestBuilder {
+    private var baseComponents: URLComponents {
+        let components = URLComponents(string: "https://api.wolframalpha.com")!
+        return components
+    }
+    
+    private var commonQueryItems: [URLQueryItem] {
+        return [
+            URLQueryItem(name: "appid", value: WolframEndpoint.wolframAlphaApiKey)
+        ]
+    }
+    
     var urlRequest: URLRequest {
-        var components = URLComponents()
-        components.scheme = "https"
-        components.host = "api.wolframalpha.com"
+        var components = baseComponents
         
         switch self {
         case .isPrimeCheck(let query):
@@ -29,27 +36,24 @@ extension WolframEndpoint: RequestBuilder {
             let queryItems = [
                 URLQueryItem(name: "input", value: query),
                 URLQueryItem(name: "format", value: "plaintext"),
-                URLQueryItem(name: "output", value: "JSON"),
-                URLQueryItem(name: "appid", value: wolframAlphaApiKey)
-            ]
+                URLQueryItem(name: "output", value: "JSON")
+            ] + commonQueryItems
             components.queryItems = queryItems
             
         case .getPrimeNumbers:
             components.path = "/v1/result"
             let query = "list+of+first+twenty+prime+numbers"
             let queryItems = [
-                URLQueryItem(name: "i", value: query),
-                URLQueryItem(name: "appid", value: wolframAlphaApiKey)
-            ]
+                URLQueryItem(name: "i", value: query)
+            ] + commonQueryItems
             components.queryItems = queryItems
             
         case .getInfo:
             components.path = "/v1/result"
             let query = "what+is+prime+number"
             let queryItems = [
-                URLQueryItem(name: "i", value: query),
-                URLQueryItem(name: "appid", value: wolframAlphaApiKey)
-            ]
+                URLQueryItem(name: "i", value: query)
+            ] + commonQueryItems
             components.queryItems = queryItems
         }
         
@@ -58,7 +62,6 @@ extension WolframEndpoint: RequestBuilder {
         }
         
         var request = URLRequest(url: url)
-        print(url)
         request.httpMethod = "GET"
         
         return request

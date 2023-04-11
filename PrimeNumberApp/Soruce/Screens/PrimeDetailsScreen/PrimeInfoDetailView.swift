@@ -30,7 +30,7 @@ struct PrimeInfoDetailView: View {
                 Text("Prime number is \(viewModel.primeNumbersInfo).\n")
                     .font(.body)
                 Text(Constants.primesExampleTitle)
-                AnimatedPrimeCollection(integers: viewModel.primeNumbers ?? [])
+                PrimesCollection(integers: viewModel.primeNumbers ?? [])
                 Spacer()
             }
         }

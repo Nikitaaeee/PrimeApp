@@ -23,7 +23,7 @@ struct MenuView: View {
                             NavigationLink(destination: CounterView(viewModel: CounterViewModel(state: self.viewModel.state))) {
                                 Text(Constants.counterTitle)
                             }
-                            NavigationLink(destination: FavoritePrimesView(viewModel: FavoritePrimesViewModel(state: self.viewModel.state))) {
+                            NavigationLink(destination: FavoritePrimesView(viewModel: FavoritePrimesViewModel(state: FavoritePrimesState(state: self.viewModel.state)))) {
                                 Text(Constants.faviriteTitle)
                             }
                         }

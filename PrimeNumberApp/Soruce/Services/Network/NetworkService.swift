@@ -25,11 +25,7 @@ struct NetworkService: NetworkServiceProtocol {
             .mapError { _ in .unknown }
             .flatMap { data, response -> AnyPublisher<T, APIError> in
                 if let response = response as? HTTPURLResponse {
-                    print(response.statusCode)
                     if (200...299).contains(response.statusCode) {
-                        if let stringData = String(data: data, encoding: .utf8) {
-                            print("Response data: \(stringData)")
-                        }
                         return Just(data)
                             .decode(type: T.self, decoder: decoder)
                             .mapError {_ in .decodingError}
