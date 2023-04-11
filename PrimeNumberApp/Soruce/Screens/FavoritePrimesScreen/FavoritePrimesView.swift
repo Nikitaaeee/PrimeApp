@@ -21,9 +21,7 @@ struct FavoritePrimesView: View {
                 Text("\(prime.value)")
             }
             .onDelete(perform: { indexSet in
-                for index in indexSet {
-                    self.viewModel.state.favoritePrimes.remove(at: index)
-                }
+                self.viewModel.removeFavoritePrime(at: indexSet)
             })
         }
         .navigationBarTitle(Text(Constants.viewTitle))

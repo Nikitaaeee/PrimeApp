@@ -28,8 +28,9 @@ struct CounterView: View {
             Button(LocalizedStringKey(String(format: NSLocalizedString(Constants.findPrimeLocalizableKey, comment: ""),
                                              viewModel.state.counter,
                                              viewModel.isNumberPrime()))) {
-                viewModel.findClosestPrimeNumber(to: viewModel.state.counter)
+                self.viewModel.findClosestPrimeNumber(to: viewModel.state.counter)
             }
+            .disabled(self.viewModel.isNthPrimeButtonDisabled)
         }
         .font(.title2)
         .navigationTitle(Constants.navTitle)

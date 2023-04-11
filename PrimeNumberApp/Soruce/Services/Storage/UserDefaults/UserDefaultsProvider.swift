@@ -9,20 +9,20 @@ import Foundation
 
 protocol UserDefaultsProtocol: AnyObject {
     var counter: Int { get set }
-    var favoritePrimes: [FavoritePrimes] { get set }
+    var favoritePrimes: [FavoritePrime] { get set }
 }
 
 final class UserDefaultsProvider: UserDefaultsProtocol {
     private let counterStore = UserDefaultsStore<Int>(key: Keys.counter.rawValue, defaultValue: 0)
-    private let favoritePrimesStore = UserDefaultsStore<[FavoritePrimes]>(key: Keys.favoritePrimes.rawValue, defaultValue: [])
+    private let favoritePrimesStore = UserDefaultsStore<[FavoritePrime]>(key: Keys.favoritePrimes.rawValue, defaultValue: [])
     
     var counter: Int {
         get { counterStore.value }
         set { counterStore.value = newValue }
     }
     
-    var favoritePrimes: [FavoritePrimes] {
-        get { favoritePrimesStore.value }
+    var favoritePrimes: [FavoritePrime] {
+        get { return favoritePrimesStore.value }
         set { favoritePrimesStore.value = newValue }
     }
     

@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+struct User {
+    let id: Int
+    let name: String
+    let bio: String
+}
+
+struct Activity {
+    let timestamp: Date
+    let type: ActivityType
+    
+    enum ActivityType {
+        case addedFavoritePrime(FavoritePrime)
+        case removedFavoritePrime(FavoritePrime)
+    }
+}

@@ -1,5 +1,5 @@
 //
-//  AnimatedPrimeCollection.swift
+//  PrimesCollection.swift
 //  PrimeNumberApp
 //
 //  Created by Nikita Kirshin on 07.04.2023.

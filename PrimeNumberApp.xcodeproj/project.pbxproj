@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482ABE9129E5784000683917 /* UserActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482ABE9029E5784000683917 /* UserActivity.swift */; };
+		482ABE9429E579E600683917 /* FavoritePrimesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482ABE9329E579E600683917 /* FavoritePrimesState.swift */; };
 		4834302429DDC15D0021CE72 /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834302329DDC15D0021CE72 /* UserDefaultsStore.swift */; };
 		4834302729DDC1BE0021CE72 /* FavoritePrimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834302629DDC1BE0021CE72 /* FavoritePrimesViewModel.swift */; };
 		4834302929DDC92E0021CE72 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834302829DDC92E0021CE72 /* CircleButton.swift */; };
@@ -37,13 +39,13 @@
 		4840ADE929D5C3D400C8D620 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADE829D5C3D400C8D620 /* APIError.swift */; };
 		4840ADEB29D5C3F000C8D620 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADEA29D5C3F000C8D620 /* RequestBuilder.swift */; };
 		4840ADEE29D5C42200C8D620 /* WolframEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840ADED29D5C42200C8D620 /* WolframEndpoint.swift */; };
-		4867444929E0011B009FA499 /* AnimatedPrimeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867444829E0011B009FA499 /* AnimatedPrimeCollection.swift */; };
+		4867444929E0011B009FA499 /* PrimesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867444829E0011B009FA499 /* PrimesCollection.swift */; };
 		4867445429E0137D009FA499 /* PrimeNumbersInfoNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867445329E0137D009FA499 /* PrimeNumbersInfoNetworkManagerProtocol.swift */; };
 		48DC1AAD29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AAC29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift */; };
 		48DC1AB029DC491D0011A0A0 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AAF29DC491D0011A0A0 /* CounterViewModel.swift */; };
 		48DC1AB229DC4CCA0011A0A0 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AB129DC4CCA0011A0A0 /* MenuViewModel.swift */; };
 		48DC1AB429DC63910011A0A0 /* FavoritePrimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AB329DC63910011A0A0 /* FavoritePrimesView.swift */; };
-		48DC1AB729DC67210011A0A0 /* FavoritePrimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AB629DC67210011A0A0 /* FavoritePrimes.swift */; };
+		48DC1AB729DC67210011A0A0 /* FavoritePrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC1AB629DC67210011A0A0 /* FavoritePrime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		482ABE9029E5784000683917 /* UserActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActivity.swift; sourceTree = "<group>"; };
+		482ABE9329E579E600683917 /* FavoritePrimesState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesState.swift; sourceTree = "<group>"; };
 		4834302329DDC15D0021CE72 /* UserDefaultsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStore.swift; sourceTree = "<group>"; };
 		4834302629DDC1BE0021CE72 /* FavoritePrimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesViewModel.swift; sourceTree = "<group>"; };
 		4834302829DDC92E0021CE72 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
@@ -98,13 +102,13 @@
 		4840ADE829D5C3D400C8D620 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		4840ADEA29D5C3F000C8D620 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		4840ADED29D5C42200C8D620 /* WolframEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframEndpoint.swift; sourceTree = "<group>"; };
-		4867444829E0011B009FA499 /* AnimatedPrimeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPrimeCollection.swift; sourceTree = "<group>"; };
+		4867444829E0011B009FA499 /* PrimesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimesCollection.swift; sourceTree = "<group>"; };
 		4867445329E0137D009FA499 /* PrimeNumbersInfoNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersInfoNetworkManagerProtocol.swift; sourceTree = "<group>"; };
 		48DC1AAC29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPrimeNumberManagerProtocol.swift; sourceTree = "<group>"; };
 		48DC1AAF29DC491D0011A0A0 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		48DC1AB129DC4CCA0011A0A0 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		48DC1AB329DC63910011A0A0 /* FavoritePrimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesView.swift; sourceTree = "<group>"; };
-		48DC1AB629DC67210011A0A0 /* FavoritePrimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimes.swift; sourceTree = "<group>"; };
+		48DC1AB629DC67210011A0A0 /* FavoritePrime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,11 +136,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		482ABE9229E5784300683917 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				482ABE9029E5784000683917 /* UserActivity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4834302529DDC1600021CE72 /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				4834302329DDC15D0021CE72 /* UserDefaultsStore.swift */,
 				4840ADD929D462C700C8D620 /* UserDefaultsProvider.swift */,
+				4834302329DDC15D0021CE72 /* UserDefaultsStore.swift */,
 			);
 			path = UserDefaults;
 			sourceTree = "<group>";
@@ -275,6 +287,7 @@
 		4840ADD629D45CEF00C8D620 /* AppState */ = {
 			isa = PBXGroup;
 			children = (
+				482ABE9229E5784300683917 /* Models */,
 				4840ADD729D45CFE00C8D620 /* AppState.swift */,
 			);
 			path = AppState;
@@ -323,8 +336,8 @@
 			isa = PBXGroup;
 			children = (
 				4867445229E0127C009FA499 /* Views */,
-				48DC1AAF29DC491D0011A0A0 /* CounterViewModel.swift */,
 				4840ADD129D4519800C8D620 /* CounterView.swift */,
+				48DC1AAF29DC491D0011A0A0 /* CounterViewModel.swift */,
 			);
 			path = CounterScreen;
 			sourceTree = "<group>";
@@ -332,8 +345,9 @@
 		4867444C29E011ED009FA499 /* FavoritePrimesScreen */ = {
 			isa = PBXGroup;
 			children = (
-				4834302629DDC1BE0021CE72 /* FavoritePrimesViewModel.swift */,
+				482ABE9329E579E600683917 /* FavoritePrimesState.swift */,
 				48DC1AB329DC63910011A0A0 /* FavoritePrimesView.swift */,
+				4834302629DDC1BE0021CE72 /* FavoritePrimesViewModel.swift */,
 			);
 			path = FavoritePrimesScreen;
 			sourceTree = "<group>";
@@ -381,7 +395,7 @@
 		4867445129E01268009FA499 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4867444829E0011B009FA499 /* AnimatedPrimeCollection.swift */,
+				4867444829E0011B009FA499 /* PrimesCollection.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -397,7 +411,7 @@
 		48DC1AB529DC67150011A0A0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				48DC1AB629DC67210011A0A0 /* FavoritePrimes.swift */,
+				48DC1AB629DC67210011A0A0 /* FavoritePrime.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -535,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4840ADE729D5C39C00C8D620 /* NetworkService.swift in Sources */,
+				482ABE9429E579E600683917 /* FavoritePrimesState.swift in Sources */,
 				4840ADD529D45A3200C8D620 /* NumberPluralizer.swift in Sources */,
 				4840ADD829D45CFE00C8D620 /* AppState.swift in Sources */,
 				48DC1AB229DC4CCA0011A0A0 /* MenuViewModel.swift in Sources */,
@@ -542,7 +557,7 @@
 				48DC1AAD29DC44DA0011A0A0 /* FindPrimeNumberManagerProtocol.swift in Sources */,
 				4834304E29DF15050021CE72 /* PrimeInfoDetailViewModel.swift in Sources */,
 				4840ADEB29D5C3F000C8D620 /* RequestBuilder.swift in Sources */,
-				4867444929E0011B009FA499 /* AnimatedPrimeCollection.swift in Sources */,
+				4867444929E0011B009FA499 /* PrimesCollection.swift in Sources */,
 				4867445429E0137D009FA499 /* PrimeNumbersInfoNetworkManagerProtocol.swift in Sources */,
 				4834302429DDC15D0021CE72 /* UserDefaultsStore.swift in Sources */,
 				4834304629DEFFAC0021CE72 /* CounterControlView.swift in Sources */,
@@ -552,7 +567,8 @@
 				4840ADEE29D5C42200C8D620 /* WolframEndpoint.swift in Sources */,
 				4834304829DF055E0021CE72 /* PrimeNumbersInfoView.swift in Sources */,
 				4840ADA729D44F8800C8D620 /* PrimeNumberAppApp.swift in Sources */,
-				48DC1AB729DC67210011A0A0 /* FavoritePrimes.swift in Sources */,
+				48DC1AB729DC67210011A0A0 /* FavoritePrime.swift in Sources */,
+				482ABE9129E5784000683917 /* UserActivity.swift in Sources */,
 				4840ADE129D5BB3A00C8D620 /* String+Extensions.swift in Sources */,
 				48DC1AB429DC63910011A0A0 /* FavoritePrimesView.swift in Sources */,
 				4840ADDE29D5BB0000C8D620 /* IsPrimeNumberChecker.swift in Sources */,

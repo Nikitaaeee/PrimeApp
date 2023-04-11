@@ -12,12 +12,18 @@ final class FavoritePrimesViewModel: ObservableObject {
     
     //MARK: - Properties
     
-    @Published var state: AppState
+    @Published var state: FavoritePrimesState
     
     //MARK: - Lifecycle
     
-    init(state: AppState) {
+    init(state: FavoritePrimesState) {
         self.state = state
+    }
+    
+    func removeFavoritePrime(at indexSet: IndexSet) {
+        for index in indexSet {
+            self.state.favoritePrimes.remove(at: index)
+        }
     }
 }
  

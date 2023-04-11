@@ -15,6 +15,7 @@ final class CounterViewModel: ObservableObject, FindPrimeNumberManagerProtocol {
     @Published var state: AppState
     @Published var isPrimeModalShown: Bool = false
     @Published var showPrimeNumberAlert: Bool = false
+    @Published var isNthPrimeButtonDisabled: Bool = false
     
     //TODO: - Refactor Bool binding logic into Int binding logic
     @Published var primeNumber: Int? = nil {
@@ -52,6 +53,7 @@ final class CounterViewModel: ObservableObject, FindPrimeNumberManagerProtocol {
     }
     
     func findClosestPrimeNumber(to n: Int) {
+        self.isNthPrimeButtonDisabled = true
         let cancellable = self.findClosestPrime(to: n)
             .sink { completion in
                 
@@ -59,6 +61,7 @@ final class CounterViewModel: ObservableObject, FindPrimeNumberManagerProtocol {
                 let resultPod = model.queryresult.pods.first { $0.primary == true }
                 let primeNumberText = resultPod?.subpods.first?.plaintext ?? ""
                 self?.primeNumber = Int(primeNumberText)
+                self?.isNthPrimeButtonDisabled = false
             }
         cancellables.insert(cancellable)
     }

@@ -28,10 +28,10 @@ final class IsPrimeModalViewModel: ObservableObject {
     }
 
     func addToFavoritePrimes() {
-        state.favoritePrimes.append(FavoritePrimes(value: state.counter))
+        state.addFavoritePrime()
     }
 
     func removeFromFavoritePrimes() {
-        state.favoritePrimes.removeAll(where: { $0.value == state.counter })
+        state.removeFavoritePrime()
     }
 }
