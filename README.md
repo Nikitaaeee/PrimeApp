@@ -2,9 +2,11 @@
 
 Prime App inspired by PointFree SwiftUI course is an iOS application built using SwiftUI, Combine, and MVVM architecture. 
 
-It allows users to manipulate a counter, check if a number is prime, and find the n'th prime number using WolframAlpha API. 
+It allows users to manipulate a counter, check if a number is prime, and find the n'th prime number using WolframAlpha API.
+ 
 To use it you must log in https://developer.wolframalpha.com/ and get your API Key.
-API Key is stored in *enum WolframEndpoint*.
+
+Write your API KEy in *PrimeNumberApp/Soruce/Services/Network/WolframEndpoint*.
 
 The app supports localization in:
 - *English*,
